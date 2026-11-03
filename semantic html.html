@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML5 Semantics | Cynaris</title>
+    <meta name="description"
+          content="A practical demonstration of semantic HTML5 structure and accessibility.">
+
+</head>
+<body>
+
+    <header role="banner">
+        <h1>Cynaris HTML5 Learning Page</h1>
+        <p>Learning semantic HTML and accessibility</p>
+    </header>
+
+    <nav role="navigation" aria-label="Main navigation">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#learning">Learning</a></li>
+            <li><a href="#resources">Resources</a></li>
+        </ul>
+    </nav>
+
+    <main id="home" role="main">
+
+        <article aria-labelledby="article-title">
+
+            <header>
+                <h2 id="article-title">Introduction to HTML5 Semantics</h2>
+                <p>Week 1 - Day 1 Practical Task</p>
+            </header>
+
+            <section id="learning" aria-labelledby="learning-title">
+                <h3 id="learning-title">What is Semantic HTML?</h3>
+                <p>
+                    Semantic HTML uses meaningful elements to describe
+                    the structure and purpose of webpage content.
+                </p>
+            </section>
+
+            <section aria-labelledby="elements-title">
+                <h3 id="elements-title">Important HTML5 Elements</h3>
+                <ul>
+                    <li>header - introductory content</li>
+                    <li>nav - navigation links</li>
+                    <li>main - primary page content</li>
+                    <li>article - independent content</li>
+                    <li>section - related content group</li>
+                    <li>aside - supplementary content</li>
+                    <li>footer - closing information</li>
+                </ul>
+            </section>
+
+        </article>
+
+        <aside id="resources" aria-labelledby="resources-title">
+            <h2 id="resources-title">Learning Resources</h2>
+            <p>
+                Explore the
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+                    MDN HTML documentation
+                </a>
+                to learn more about HTML5.
+            </p>
+        </aside>
+
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2026 Cynaris Practical Tasks</p>
+    </footer>
+
+</body>
+</html>
