@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Fundamentals | Cynaris</title>
+    <meta name="description"
+          content="Learning CSS fundamentals with semantic HTML5.">
+
+    <style>
+        /* 1. Universal selector */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* 2. Element selector */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* 3. Header styling */
+        header {
+            background-color: #243b55;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* 4. Navigation styling */
+        nav {
+            background-color: #141e30;
+            padding: 12px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd166;
+        }
+
+        /* 5. Main content */
+        main {
+            max-width: 1000px;
+            margin: 25px auto;
+            padding: 20px;
+        }
+
+        article,
+        aside {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #243b55;
+        }
+
+        section {
+            margin-bottom: 25px;
+        }
+
+        /* 6. Class selector */
+        .highlight {
+            background-color: #e8f4ff;
+            padding: 15px;
+            border-left: 4px solid #2878b5;
+        }
+
+        /* 7. Footer styling */
+        footer {
+            background-color: #243b55;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Cynaris CSS Fundamentals</h1>
+        <p>Learning the basics of Cascading Style Sheets</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#fundamentals">CSS Basics</a></li>
+            <li><a href="#resources">Resources</a></li>
+        </ul>
+    </nav>
+
+    <main id="home">
+
+        <article>
+            <h2>Introduction to CSS</h2>
+            <p>
+                CSS stands for Cascading Style Sheets.
+                It is used to style HTML elements and improve
+                the appearance of webpages.
+            </p>
+
+            <section id="fundamentals">
+                <h2>CSS Fundamentals</h2>
+
+                <div class="highlight">
+                    <p><strong>Selectors:</strong> Target HTML elements.</p>
+                    <p><strong>Colors:</strong> Change text and background colors.</p>
+                    <p><strong>Fonts:</strong> Control text appearance.</p>
+                    <p><strong>Spacing:</strong> Use margin and padding.</p>
+                    <p><strong>Borders:</strong> Add outlines around elements.</p>
+                </div>
+            </section>
+        </article>
+
+        <aside id="resources">
+            <h2>Learning Resources</h2>
+            <p>
+                Learn more about CSS at
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+                    MDN Web Docs
+                </a>.
+            </p>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Cynaris Practical Tasks</p>
+    </footer>
+
+</body>
+</html>
